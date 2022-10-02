@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+
+{% endblock %}
+
+
+{% block content %}
+    <section id="produit">
+        <h2 style="text-align:center; font-size: 26px;">{{ fromage.name }} :</h2>
+
+        <div class="content">
+
+            <p>{{ fromage.description }}.</p>
+            <img src="{{ fromage.thumbnail.url }}" alt="{{ fromage.name }}" style="max-width: 200px;">
+            <p>Ce fromage nous viens {{ fromage.origin }}, avec sa composition au: {{ fromage.composition }}.</p>
+            <p><h3 style="text-align:right;">{{ fromage.price }}€ le kg</h3></p>
+
+        </div>
+    </section>
+{% endblock %}

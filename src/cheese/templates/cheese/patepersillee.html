@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Pâte persillées</title>
+{% endblock %}
+
+
+{% block content %}
+<section class="section-flex">
+            <p class="info-section" style="text-align:center; font-size: 45px;">Les pâtes persillées</p>
+
+
+    <div class="content">
+                {% for fromage in fromages %}
+            <div class="item">
+            <li class="btn">
+                <a href="{% url 'detail' fromage.slug %}"><h3>{{ fromage.name }} </h3></a>
+            </li>
+            <p>{{ fromage.description }}.</p>
+            <img src="{{ fromage.thumbnail.url }}" alt="{{ fromage.name }}" style="max-width: 200px;">
+            <p>{{ fromage.price }} € le kg.</p>
+        </div>
+    {% endfor %}
+
+{% endblock %}
+
+    </div>
+</section>

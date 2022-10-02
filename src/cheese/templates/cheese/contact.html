@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Nous contactez</title>
+{% endblock %}
+
+
+
+
+
+{% block content %}
+         <div class="content">
+             <div class= "blocs_center" style="<width:auto; height:auto; position:relative; margin:30px;">
+
+    <table width="100%" cellspacing="2" cellpadding="0"border="0">
+        <tbody>
+            <tr>
+                <td width="22%" valign="middle" align="left">Nom :</td>
+                <td width="78%" valign="middle" align="left">
+                    <input id="nom" class="champ_texte" name="nom" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left">Prénom :</td>
+                <td valign="middle" align="left">
+                    <input id="prenom" class="champ_texte" name="prenom" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left">Adresse :</td>
+                <td valign="middle" align="left">
+                    <input id="adresse2" class="champ_texte" name="adresse2" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left">Code postal :</td>
+                <td valign="middle" align="left">
+                    <input id="cp" class="champ_texte" name="cp" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left">Ville:</td>
+                <td valign="middle" align="left">
+                    <input id="ville" class="champ_texte" name="ville" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left">Pays:</td>
+                <td valign="middle" align="left">
+                    <input id="pays" class="champ_texte" name="pays" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left">Téléphone:</td>
+                <td valign="middle" align="left">
+                    <input id="tel" class="champ_texte" name="tel" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left">Email:</td>
+                <td valign="middle" align="left">
+                    <input id="mail" class="champ_texte" name="mail" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="middle" align="left"></td>
+                <td valign="middle" align="left"></td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="middle" align="left"></td>
+            </tr>
+            <tr>
+                <td class="libele_comment" colspan="2" valign="middle" align="left">Commentaire(s) :</td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="middle" align="left">
+                    <textarea id="commentaire" class="champ_texte_multi" name="commentaire" cols="30"
+                              rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" valign="middle" align="left">
+                    <input class="btn_formulaire" name="envoyer" type="submit" dir="ltr" value="Envoyer"
+                    onclick="MM_validateForm('nom','', 'R', 'prenom', '', 'R', 'ville', '', 'R', 'mail', '', 'RisEmail');return document.MM_returnValue;" lang="fr">
+                </td>
+            </tr>
+        </tbody>
+
+
+    </table>
+             </div>
+         </div>
+
+{% endblock %}

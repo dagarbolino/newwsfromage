@@ -1,0 +1,92 @@
+{% load static %}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} {% endblock %}
+    <link rel="stylesheet" href="{% static 'cheese/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div class="cssFont_1">
+         <li class="btn">
+            <a href="/home/"><h2 style="text-align:center;">Au beurre noisette</h2></a></li>
+    </div>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="{% static 'cheese/images/plateau_prenium.jpg' %}" style="width: 300px; height: 300px;"></div>
+            <div class="slide"><img src="{% static 'cheese/images/plateau_prenium.jpg' %}" style="width: 300px; height: 300px;"></div>
+            <div class="slide"><img src="{% static 'cheese/images/plateau_prenium.jpg' %}" style="width: 300px; height: 300px;"></div>
+            <div class="slide"><img src="{% static 'cheese/images/plateau_prenium.jpg' %}" style="width: 300px; height: 300px;"></div>
+            <div class="slide"><img src="{% static 'cheese/images/plateau_prenium.jpg' %}" style="width: 300px; height: 300px;"></div>
+            <div class="slide"><img src="{% static 'cheese/images/plateau_prenium.jpg' %}" style="width: 300px; height: 300px;"></div>
+        </div>
+    </div>
+
+    <div class="header-nav">
+        <div class="dropdown">
+        <button class="dropbtn">Fromages
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a href="/allcheese/">Nos fromages</a>
+            <a href="/fromagedechevre/">Fromage de chèvre</a>
+            <a href="/fromagedebrebis/">Fromage de brebis</a>
+            <a href="/patepresseescuite/">Pâte pressées cuites</a>
+            <a href="/patefleurie/">Pâte fleuries</a>
+            <a href="/patepersillee/">Pâte persillées</a>
+            <a href="/pateforte/">Pâte fortes</a>
+            <a href="/patemolle/">Pâte molles</a>
+        </div>
+    </div>
+
+    <a href="/recettes/">Recettes</a>
+    <a href="/lieux/">Nos marchés</a>
+    <a href="/livraison/">Livraison</a>
+    <a href="/contact/">Contact</a>
+</div>
+
+  </div>
+
+
+</header>
+
+
+
+{% block centre %}
+{% endblock %}
+
+
+
+
+
+
+
+{% block content %}
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+

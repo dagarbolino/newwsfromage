@@ -1,0 +1,121 @@
+{% load static %}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %} {% endblock %}
+    <link rel="stylesheet" href="{% static 'cheese/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <div class="cssFont_1">
+         <li class="btn">
+            <a href="/home/"><h2 style="text-align:center;">Au beurre noisette</h2></a></li>
+    </div>
+    <div class="head">
+        <nav class="bar_nav">
+            <ul class="liste-barnav">
+                <li class="btn">
+                    <a href="/nous/">Qui sommes-nous</a></li>
+                <li class="btn">
+                    <a href="/lieux/">Lieux de ventes</a></li>
+                <li class="btn">
+                    <a href="/livraison/">Commande/Livraison</a></li>
+                <li class="btn">
+                    <a href="/recettes/">Recettes</a></li>
+                <li class="btn">
+                    <a href="/contact/">Contactez-nous</a></li>
+                <li class="btn">
+                    <a href="/questions/">Réponses à vos questions</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+{% block centre %}
+    <section class="section-flex">
+    <div class="container-flex">
+        <div class="item-flex a1">
+            <nav>
+                <ul>
+                    <li class="btn">
+                        <a href="/allcheese/" style="font-size: 18px;">NOS FROMAGES</a></li>
+                    <li class="btn">
+                        <a href="/fromagedebrebis/">fromages de brebis</a></li>
+                    <li class="btn">
+                        <a href="/fromagedechevre/">fromages de chèvres</a></li>
+                    <li class="btn">
+                        <a href="/patefleurie/">pâtes fleuries</a></li>
+                    <li class="btn">
+                        <a href="/pateforte/">pâtes fortes</a></li>
+                    <li class="btn">
+                        <a href="/patemolle/">pâtes molles</a></li>
+                    <li class="btn">
+                        <a href="/patepresseescuite/">pâtes pressées cuites</a></li>
+                    <li class="btn">
+                        <a href="/triplecreme/">triples crèmes</a></li>
+                    <li class="btn">
+                        <a href="/patepersillee/">pâtes persillées</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+        <div class="item-flex a2">
+
+            {% block content %}
+            {% endblock %}
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="item-flex a3">
+        </div>
+
+
+
+
+    </div>
+
+</section>
+
+{% endblock %}
+
+
+
+{% block footer %}
+    <footer>
+    <div class="footer">
+        <p>
+            Copyright alex 2022 all Right reserved
+        </p>
+    </div>
+
+</footer>
+{% endblock %}
+
+
+
+</body>
+
+</html>
+
+
+

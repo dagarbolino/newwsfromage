@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Les fromage du Nord</title>
+{% endblock %}
+
+
+{% block content %}
+    <section id="produit">
+        <h2 style="text-align:center; font-size: 26px;">Les fromages du Nord</h2>
+
+    {% for fromage in fromages %}
+        <div class="content">
+            <li class="btn">
+                <a href="{% url 'detail' fromage.slug %}"><h3>{{ fromage.name }} </h3></a>
+            </li>
+            <p>{{ fromage.description }}.</p>
+            <img src="{{ fromage.thumbnail.url }}" alt="{{ fromage.name }}" style="max-width: 200px;">
+            <p>{{ fromage.price }} € le kg.</p>
+            <hr>
+        </div>
+    {% endfor %}
+    </section>
+{% endblock %}

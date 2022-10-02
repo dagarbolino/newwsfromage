@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    <title>Nos plateaux</title>
+{% endblock %}
+
+
+{% block content %}
+
+<div id= "blocs_acceuil" style="position:relative; margin-left: auto; margin-right: auto;">
+            <h2 style="text-align:center; font-size: 26px;">Galerie photo de nos plateaux :</h2>
+
+    <table style="padding: 20px 20px 20px 20px; margin-bottom: 10%; margin-top: auto;">
+        <tbody>
+            <tr>
+                <td width="300px" valign="top" align="left">
+                        <img src="{% static 'cheese/images/plateau-de-fromage-10-personnes.jpg' %}" alt="" style="width:300px;height:250px;">
+                </td>
+
+                <td width="300px" valign="top" align="right">
+                        <img src="{% static 'cheese/images/plateau-de-fromage-sapin-de-noel.jpg' %}" alt="" style="width:300px;height:250px;">
+                </td>
+            </tr>
+
+            <tr>
+                <td width="300px" valign="top" align="left">
+                        <img src="{% static 'cheese/images/plateau_prenium.jpg' %}" alt="" style="width:300px;height:250px;">
+                </td>
+
+                <td width="300px" valign="top" align="right">
+                        <img src="{% static 'cheese/images/plateau_prenium.jpg' %}" alt="" style="width:300px;height:250px;">
+                </td>
+            </tr>
+
+                        <tr>
+                <td width="300px" valign="top" align="left">
+                        <img src="{% static 'cheese/images/plateauoffre2.jpg' %}" alt="" style="width:300px;height:250px;">
+                </td>
+
+                <td width="300px" valign="top" align="right">
+                        <img src="{% static 'cheese/images/index.jpg' %}" alt="" style="width:300px;height:250px;">
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
+
